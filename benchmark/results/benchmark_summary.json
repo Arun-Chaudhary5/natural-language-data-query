@@ -1,0 +1,87 @@
+{
+  "overall": {
+    "metadata": {
+      "providers": [
+        "gemini"
+      ],
+      "models": [
+        "gemini-2.5-flash"
+      ]
+    },
+    "total": 3,
+    "successful": 3,
+    "success_rate": 100.0,
+    "exact_matches": 1,
+    "exact_match_accuracy": 33.33,
+    "execution_matches": 2,
+    "execution_match_accuracy": 66.67,
+    "latencies": {
+      "average_ms": 1497.16,
+      "p50_ms": 1666.62,
+      "p95_ms": 1839.91
+    },
+    "retries": {
+      "total": 0,
+      "average": 0.0
+    },
+    "errors": {
+      "validation": 0,
+      "execution": 0,
+      "generation": 0
+    },
+    "failure_examples": [
+      {
+        "id": 3,
+        "question": "Show all products costing more than 10000.",
+        "expected_sql": "SELECT * FROM products WHERE price > 10000;",
+        "predicted_sql": "SELECT product_name FROM products WHERE price > 10000",
+        "error": null,
+        "execution_match": false
+      }
+    ]
+  },
+  "categories": {
+    "basic": {
+      "metadata": {
+        "providers": [
+          "gemini"
+        ],
+        "models": [
+          "gemini-2.5-flash"
+        ]
+      },
+      "total": 3,
+      "successful": 3,
+      "success_rate": 100.0,
+      "exact_matches": 1,
+      "exact_match_accuracy": 33.33,
+      "execution_matches": 2,
+      "execution_match_accuracy": 66.67,
+      "latencies": {
+        "average_ms": 1497.16,
+        "p50_ms": 1666.62,
+        "p95_ms": 1839.91
+      },
+      "retries": {
+        "total": 0,
+        "average": 0.0
+      },
+      "errors": {
+        "validation": 0,
+        "execution": 0,
+        "generation": 0
+      },
+      "failure_examples": [
+        {
+          "id": 3,
+          "question": "Show all products costing more than 10000.",
+          "expected_sql": "SELECT * FROM products WHERE price > 10000;",
+          "predicted_sql": "SELECT product_name FROM products WHERE price > 10000",
+          "error": null,
+          "execution_match": false
+        }
+      ]
+    }
+  },
+  "expected_total_cases": 200
+}

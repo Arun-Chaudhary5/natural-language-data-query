@@ -1,0 +1,1311 @@
+[
+  {
+    "id": 1,
+    "category": "basic",
+    "question": "Show all customers from Delhi.",
+    "expected_sql": "SELECT * FROM customers WHERE city = 'Delhi';"
+  },
+  {
+    "id": 2,
+    "category": "basic",
+    "question": "List the names of all customers.",
+    "expected_sql": "SELECT customer_name FROM customers;"
+  },
+  {
+    "id": 3,
+    "category": "basic",
+    "question": "Show all products costing more than 10000.",
+    "expected_sql": "SELECT * FROM products WHERE price > 10000;"
+  },
+  {
+    "id": 4,
+    "category": "basic",
+    "question": "Find customers who signed up after March 1, 2024.",
+    "expected_sql": "SELECT * FROM customers WHERE signup_date > '2024-03-01';"
+  },
+  {
+    "id": 5,
+    "category": "basic",
+    "question": "Show all completed orders.",
+    "expected_sql": "SELECT * FROM orders WHERE status = 'completed';"
+  },
+  {
+    "id": 6,
+    "category": "basic",
+    "question": "List product names and prices.",
+    "expected_sql": "SELECT product_name, price FROM products;"
+  },
+  {
+    "id": 7,
+    "category": "basic",
+    "question": "Show all customers from Mumbai.",
+    "expected_sql": "SELECT * FROM customers WHERE city = 'Mumbai';"
+  },
+  {
+    "id": 8,
+    "category": "basic",
+    "question": "Find products priced below 5000.",
+    "expected_sql": "SELECT * FROM products WHERE price < 5000;"
+  },
+  {
+    "id": 9,
+    "category": "basic",
+    "question": "Show all cancelled orders.",
+    "expected_sql": "SELECT * FROM orders WHERE status = 'cancelled';"
+  },
+  {
+    "id": 10,
+    "category": "basic",
+    "question": "List customer names and their cities.",
+    "expected_sql": "SELECT customer_name, city FROM customers;"
+  },
+  
+    {
+    "id": 11,
+    "category": "basic",
+    "question": "Show the email addresses of customers from Delhi.",
+    "expected_sql": "SELECT email FROM customers WHERE city = 'Delhi';"
+    },
+    {
+    "id": 12,
+    "category": "basic",
+    "question": "List the names of products costing exactly 3000.",
+    "expected_sql": "SELECT product_name FROM products WHERE price = 3000;"
+    },
+    {
+    "id": 13,
+    "category": "basic",
+    "question": "Show the IDs of completed orders.",
+    "expected_sql": "SELECT order_id FROM orders WHERE status = 'completed';"
+    },
+    {
+    "id": 14,
+    "category": "basic",
+    "question": "List customers who signed up before April 1, 2024.",
+    "expected_sql": "SELECT * FROM customers WHERE signup_date < '2024-04-01';"
+    },
+    {
+    "id": 15,
+    "category": "basic",
+    "question": "Show product names that cost at least 10000.",
+    "expected_sql": "SELECT product_name FROM products WHERE price >= 10000;"
+    },
+    {
+    "id": 16,
+    "category": "basic",
+    "question": "Show orders placed after February 1, 2025.",
+    "expected_sql": "SELECT * FROM orders WHERE order_date > '2025-02-01';"
+    },
+    {
+    "id": 17,
+    "category": "basic",
+    "question": "List the cities of all customers.",
+    "expected_sql": "SELECT city FROM customers;"
+    },
+    {
+    "id": 18,
+    "category": "basic",
+    "question": "Show product IDs and product names.",
+    "expected_sql": "SELECT product_id, product_name FROM products;"
+    },
+    {
+    "id": 19,
+    "category": "basic",
+    "question": "Find customers whose city is Ahmedabad.",
+    "expected_sql": "SELECT * FROM customers WHERE city = 'Ahmedabad';"
+    },
+    {
+    "id": 20,
+    "category": "basic",
+    "question": "Show orders placed on January 15, 2025.",
+    "expected_sql": "SELECT * FROM orders WHERE order_date = '2025-01-15';"
+    },
+    {
+    "id": 21,
+    "category": "basic",
+    "question": "List product names with a price of 50000 or more.",
+    "expected_sql": "SELECT product_name FROM products WHERE price >= 50000;"
+    },
+    {
+    "id": 22,
+    "category": "basic",
+    "question": "Show the names and signup dates of customers from Bengaluru.",
+    "expected_sql": "SELECT customer_name, signup_date FROM customers WHERE city = 'Bengaluru';"
+    },
+    {
+    "id": 23,
+    "category": "basic",
+    "question": "List order IDs and order dates for cancelled orders.",
+    "expected_sql": "SELECT order_id, order_date FROM orders WHERE status = 'cancelled';"
+    },
+    {
+    "id": 24,
+    "category": "basic",
+    "question": "Find products costing between 3000 and 50000 inclusive.",
+    "expected_sql": "SELECT * FROM products WHERE price BETWEEN 3000 AND 50000;"
+    },
+    {
+    "id": 25,
+    "category": "basic",
+    "question": "Show customers who are not from Delhi.",
+    "expected_sql": "SELECT * FROM customers WHERE city != 'Delhi';"
+    },
+    {
+    "id": 26,
+    "category": "basic",
+    "question": "List products that do not cost 3000.",
+    "expected_sql": "SELECT * FROM products WHERE price != 3000;"
+    },
+    {
+    "id": 27,
+    "category": "basic",
+    "question": "Show customers from Delhi or Mumbai.",
+    "expected_sql": "SELECT * FROM customers WHERE city IN ('Delhi', 'Mumbai');"
+    },
+    {
+    "id": 28,
+    "category": "basic",
+    "question": "Find orders placed between January 1 and March 31, 2025.",
+    "expected_sql": "SELECT * FROM orders WHERE order_date BETWEEN '2025-01-01' AND '2025-03-31';"
+    },
+    {
+    "id": 29,
+    "category": "basic",
+    "question": "Show product names and prices for products cheaper than 10000.",
+    "expected_sql": "SELECT product_name, price FROM products WHERE price < 10000;"
+    },
+    {
+    "id": 30,
+    "category": "basic",
+    "question": "List customer IDs and emails for customers who signed up on or after March 20, 2024.",
+    "expected_sql": "SELECT customer_id, email FROM customers WHERE signup_date >= '2024-03-20';"
+    }
+    ,
+    {
+    "id": 31,
+    "category": "sorting_limit_distinct",
+    "question": "List all customers alphabetically by name.",
+    "expected_sql": "SELECT * FROM customers ORDER BY customer_name ASC;"
+    },
+    {
+    "id": 32,
+    "category": "sorting_limit_distinct",
+    "question": "Show products from most expensive to least expensive.",
+    "expected_sql": "SELECT * FROM products ORDER BY price DESC;"
+    },
+    {
+    "id": 33,
+    "category": "sorting_limit_distinct",
+    "question": "Show the three cheapest products.",
+    "expected_sql": "SELECT * FROM products ORDER BY price ASC LIMIT 3;"
+    },
+    {
+    "id": 34,
+    "category": "sorting_limit_distinct",
+    "question": "Show the two most expensive products.",
+    "expected_sql": "SELECT * FROM products ORDER BY price DESC LIMIT 2;"
+    },
+    {
+    "id": 35,
+    "category": "sorting_limit_distinct",
+    "question": "List all unique customer cities.",
+    "expected_sql": "SELECT DISTINCT city FROM customers;"
+    },
+    {
+    "id": 36,
+    "category": "sorting_limit_distinct",
+    "question": "Show completed orders from newest to oldest.",
+    "expected_sql": "SELECT * FROM orders WHERE status = 'completed' ORDER BY order_date DESC;"
+    },
+    {
+    "id": 37,
+    "category": "sorting_limit_distinct",
+    "question": "Show the earliest three orders.",
+    "expected_sql": "SELECT * FROM orders ORDER BY order_date ASC LIMIT 3;"
+    },
+    {
+    "id": 38,
+    "category": "sorting_limit_distinct",
+    "question": "List customer names from newest signup to oldest signup.",
+    "expected_sql": "SELECT customer_name FROM customers ORDER BY signup_date DESC;"
+    },
+    {
+    "id": 39,
+    "category": "sorting_limit_distinct",
+    "question": "Show the five cheapest product names and prices.",
+    "expected_sql": "SELECT product_name, price FROM products ORDER BY price ASC LIMIT 5;"
+    },
+    {
+    "id": 40,
+    "category": "sorting_limit_distinct",
+    "question": "List unique order statuses.",
+    "expected_sql": "SELECT DISTINCT status FROM orders;"
+    },
+    {
+    "id": 41,
+    "category": "sorting_limit_distinct",
+    "question": "Show customers sorted by city alphabetically and then by customer name alphabetically.",
+    "expected_sql": "SELECT * FROM customers ORDER BY city ASC, customer_name ASC;"
+    },
+    {
+    "id": 42,
+    "category": "sorting_limit_distinct",
+    "question": "Show products costing more than 5000 from highest price to lowest price.",
+    "expected_sql": "SELECT * FROM products WHERE price > 5000 ORDER BY price DESC;"
+    },
+    {
+    "id": 43,
+    "category": "sorting_limit_distinct",
+    "question": "Show the latest completed order.",
+    "expected_sql": "SELECT * FROM orders WHERE status = 'completed' ORDER BY order_date DESC LIMIT 1;"
+    },
+    {
+    "id": 44,
+    "category": "sorting_limit_distinct",
+    "question": "Show the customer who signed up first.",
+    "expected_sql": "SELECT * FROM customers ORDER BY signup_date ASC LIMIT 1;"
+    },
+    {
+    "id": 45,
+    "category": "sorting_limit_distinct",
+    "question": "List distinct category IDs used by products.",
+    "expected_sql": "SELECT DISTINCT category_id FROM products;"
+    },
+    {
+    "id": 46,
+    "category": "sorting_limit_distinct",
+    "question": "Show the names of the three most expensive products.",
+    "expected_sql": "SELECT product_name FROM products ORDER BY price DESC LIMIT 3;"
+    },
+    {
+    "id": 47,
+    "category": "sorting_limit_distinct",
+    "question": "List cancelled orders from oldest to newest.",
+    "expected_sql": "SELECT * FROM orders WHERE status = 'cancelled' ORDER BY order_date ASC;"
+    },
+    {
+    "id": 48,
+    "category": "sorting_limit_distinct",
+    "question": "Show customer names and cities sorted by city descending and customer name ascending.",
+    "expected_sql": "SELECT customer_name, city FROM customers ORDER BY city DESC, customer_name ASC;"
+    },
+    {
+    "id": 49,
+    "category": "sorting_limit_distinct",
+    "question": "Show the second and third cheapest products.",
+    "expected_sql": "SELECT * FROM products ORDER BY price ASC LIMIT 2 OFFSET 1;"
+    },
+    {
+    "id": 50,
+    "category": "sorting_limit_distinct",
+    "question": "Show the second most recently registered customer.",
+    "expected_sql": "SELECT * FROM customers ORDER BY signup_date DESC LIMIT 1 OFFSET 1;"
+    }
+,
+{
+  "id": 51,
+  "category": "aggregation_grouping",
+  "question": "How many customers are there?",
+  "expected_sql": "SELECT COUNT(*) AS customer_count FROM customers;"
+},
+{
+  "id": 52,
+  "category": "aggregation_grouping",
+  "question": "How many products are there?",
+  "expected_sql": "SELECT COUNT(*) AS product_count FROM products;"
+},
+{
+  "id": 53,
+  "category": "aggregation_grouping",
+  "question": "What is the average product price?",
+  "expected_sql": "SELECT AVG(price) AS average_price FROM products;"
+},
+{
+  "id": 54,
+  "category": "aggregation_grouping",
+  "question": "What is the highest product price?",
+  "expected_sql": "SELECT MAX(price) AS highest_price FROM products;"
+},
+{
+  "id": 55,
+  "category": "aggregation_grouping",
+  "question": "What is the lowest product price?",
+  "expected_sql": "SELECT MIN(price) AS lowest_price FROM products;"
+},
+{
+  "id": 56,
+  "category": "aggregation_grouping",
+  "question": "What is the total price of all products?",
+  "expected_sql": "SELECT SUM(price) AS total_price FROM products;"
+},
+{
+  "id": 57,
+  "category": "aggregation_grouping",
+  "question": "How many completed orders are there?",
+  "expected_sql": "SELECT COUNT(*) AS completed_order_count FROM orders WHERE status = 'completed';"
+},
+{
+  "id": 58,
+  "category": "aggregation_grouping",
+  "question": "How many cancelled orders are there?",
+  "expected_sql": "SELECT COUNT(*) AS cancelled_order_count FROM orders WHERE status = 'cancelled';"
+},
+{
+  "id": 59,
+  "category": "aggregation_grouping",
+  "question": "How many customers are there in each city?",
+  "expected_sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city;"
+},
+{
+  "id": 60,
+  "category": "aggregation_grouping",
+  "question": "How many orders have each status?",
+  "expected_sql": "SELECT status, COUNT(*) AS order_count FROM orders GROUP BY status;"
+},
+{
+  "id": 61,
+  "category": "aggregation_grouping",
+  "question": "What is the average product price for each category ID?",
+  "expected_sql": "SELECT category_id, AVG(price) AS average_price FROM products GROUP BY category_id;"
+},
+{
+  "id": 62,
+  "category": "aggregation_grouping",
+  "question": "What is the highest product price in each category ID?",
+  "expected_sql": "SELECT category_id, MAX(price) AS highest_price FROM products GROUP BY category_id;"
+},
+{
+  "id": 63,
+  "category": "aggregation_grouping",
+  "question": "What is the lowest product price in each category ID?",
+  "expected_sql": "SELECT category_id, MIN(price) AS lowest_price FROM products GROUP BY category_id;"
+},
+{
+  "id": 64,
+  "category": "aggregation_grouping",
+  "question": "How many products belong to each category ID?",
+  "expected_sql": "SELECT category_id, COUNT(*) AS product_count FROM products GROUP BY category_id;"
+},
+{
+  "id": 65,
+  "category": "aggregation_grouping",
+  "question": "Show cities that have more than one customer.",
+  "expected_sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city HAVING COUNT(*) > 1;"
+},
+{
+  "id": 66,
+  "category": "aggregation_grouping",
+  "question": "Show order statuses that occur more than once.",
+  "expected_sql": "SELECT status, COUNT(*) AS order_count FROM orders GROUP BY status HAVING COUNT(*) > 1;"
+},
+{
+  "id": 67,
+  "category": "aggregation_grouping",
+  "question": "Show category IDs whose average product price is above 10000.",
+  "expected_sql": "SELECT category_id, AVG(price) AS average_price FROM products GROUP BY category_id HAVING AVG(price) > 10000;"
+},
+{
+  "id": 68,
+  "category": "aggregation_grouping",
+  "question": "Show the number of customers in each city from highest count to lowest.",
+  "expected_sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city ORDER BY customer_count DESC;"
+},
+{
+  "id": 69,
+  "category": "aggregation_grouping",
+  "question": "Show the category ID with the highest average product price.",
+  "expected_sql": "SELECT category_id, AVG(price) AS average_price FROM products GROUP BY category_id ORDER BY average_price DESC LIMIT 1;"
+},
+{
+  "id": 70,
+  "category": "aggregation_grouping",
+  "question": "Show the order status with the highest number of orders.",
+  "expected_sql": "SELECT status, COUNT(*) AS order_count FROM orders GROUP BY status ORDER BY order_count DESC LIMIT 1;"
+},
+{
+  "id": 71,
+  "category": "aggregation_grouping",
+  "question": "How many customers signed up after March 1, 2024?",
+  "expected_sql": "SELECT COUNT(*) AS customer_count FROM customers WHERE signup_date > '2024-03-01';"
+},
+{
+  "id": 72,
+  "category": "aggregation_grouping",
+  "question": "What is the average price of products costing more than 5000?",
+  "expected_sql": "SELECT AVG(price) AS average_price FROM products WHERE price > 5000;"
+},
+{
+  "id": 73,
+  "category": "aggregation_grouping",
+  "question": "What is the total price of products in category ID 1?",
+  "expected_sql": "SELECT SUM(price) AS total_price FROM products WHERE category_id = 1;"
+},
+{
+  "id": 74,
+  "category": "aggregation_grouping",
+  "question": "How many distinct cities do customers come from?",
+  "expected_sql": "SELECT COUNT(DISTINCT city) AS city_count FROM customers;"
+},
+{
+  "id": 75,
+  "category": "aggregation_grouping",
+  "question": "How many distinct category IDs are used by products?",
+  "expected_sql": "SELECT COUNT(DISTINCT category_id) AS category_count FROM products;"
+},
+{
+  "id": 76,
+  "category": "aggregation_grouping",
+  "question": "Show the difference between the highest and lowest product prices.",
+  "expected_sql": "SELECT MAX(price) - MIN(price) AS price_range FROM products;"
+},
+{
+  "id": 77,
+  "category": "aggregation_grouping",
+  "question": "Show the average, minimum, and maximum product prices.",
+  "expected_sql": "SELECT AVG(price) AS average_price, MIN(price) AS minimum_price, MAX(price) AS maximum_price FROM products;"
+},
+{
+  "id": 78,
+  "category": "aggregation_grouping",
+  "question": "Show the number of products and average price for each category ID.",
+  "expected_sql": "SELECT category_id, COUNT(*) AS product_count, AVG(price) AS average_price FROM products GROUP BY category_id;"
+},
+{
+  "id": 79,
+  "category": "aggregation_grouping",
+  "question": "Show category IDs that contain at least two products.",
+  "expected_sql": "SELECT category_id, COUNT(*) AS product_count FROM products GROUP BY category_id HAVING COUNT(*) >= 2;"
+},
+{
+  "id": 80,
+  "category": "aggregation_grouping",
+  "question": "Show the two category IDs with the highest average product prices.",
+  "expected_sql": "SELECT category_id, AVG(price) AS average_price FROM products GROUP BY category_id ORDER BY average_price DESC LIMIT 2;"
+}
+,
+{
+  "id": 81,
+  "category": "joins",
+  "question": "Show every product with its category name.",
+  "expected_sql": "SELECT p.product_name, c.category_name FROM products AS p JOIN categories AS c ON p.category_id = c.category_id;"
+},
+{
+  "id": 82,
+  "category": "joins",
+  "question": "Show every order with the name of the customer who placed it.",
+  "expected_sql": "SELECT o.order_id, c.customer_name FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id;"
+},
+{
+  "id": 83,
+  "category": "joins",
+  "question": "List order IDs, order dates, and customer names.",
+  "expected_sql": "SELECT o.order_id, o.order_date, c.customer_name FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id;"
+},
+{
+  "id": 84,
+  "category": "joins",
+  "question": "Show product names and their category names for products costing more than 10000.",
+  "expected_sql": "SELECT p.product_name, c.category_name FROM products AS p JOIN categories AS c ON p.category_id = c.category_id WHERE p.price > 10000;"
+},
+{
+  "id": 85,
+  "category": "joins",
+  "question": "Show completed orders with the names of the customers who placed them.",
+  "expected_sql": "SELECT o.order_id, c.customer_name FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id WHERE o.status = 'completed';"
+},
+{
+  "id": 86,
+  "category": "joins",
+  "question": "Show each order item with its product name.",
+  "expected_sql": "SELECT oi.order_item_id, p.product_name FROM order_items AS oi JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 87,
+  "category": "joins",
+  "question": "List product names, quantities, and unit prices for all order items.",
+  "expected_sql": "SELECT p.product_name, oi.quantity, oi.unit_price FROM order_items AS oi JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 88,
+  "category": "joins",
+  "question": "Show order IDs with the product names included in each order.",
+  "expected_sql": "SELECT oi.order_id, p.product_name FROM order_items AS oi JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 89,
+  "category": "joins",
+  "question": "Show customer names and the dates of their orders.",
+  "expected_sql": "SELECT c.customer_name, o.order_date FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id;"
+},
+{
+  "id": 90,
+  "category": "joins",
+  "question": "Show cancelled order IDs and the names of the customers who placed them.",
+  "expected_sql": "SELECT o.order_id, c.customer_name FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id WHERE o.status = 'cancelled';"
+},
+{
+  "id": 91,
+  "category": "joins",
+  "question": "Show product names, prices, and category names.",
+  "expected_sql": "SELECT p.product_name, p.price, c.category_name FROM products AS p JOIN categories AS c ON p.category_id = c.category_id;"
+},
+{
+  "id": 92,
+  "category": "joins",
+  "question": "Show order item IDs together with their order dates.",
+  "expected_sql": "SELECT oi.order_item_id, o.order_date FROM order_items AS oi JOIN orders AS o ON oi.order_id = o.order_id;"
+},
+{
+  "id": 93,
+  "category": "joins",
+  "question": "Show the names of customers who placed completed orders.",
+  "expected_sql": "SELECT c.customer_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id WHERE o.status = 'completed';"
+},
+{
+  "id": 94,
+  "category": "joins",
+  "question": "Show products from the Electronics category.",
+  "expected_sql": "SELECT p.* FROM products AS p JOIN categories AS c ON p.category_id = c.category_id WHERE c.category_name = 'Electronics';"
+},
+{
+  "id": 95,
+  "category": "joins",
+  "question": "Show order IDs, customer names, and order statuses.",
+  "expected_sql": "SELECT o.order_id, c.customer_name, o.status FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id;"
+}
+,
+{
+  "id": 96,
+  "category": "joins",
+  "question": "Show customer names and the product names they ordered.",
+  "expected_sql": "SELECT c.customer_name, p.product_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 97,
+  "category": "joins",
+  "question": "Show order IDs, product names, and quantities for every ordered product.",
+  "expected_sql": "SELECT o.order_id, p.product_name, oi.quantity FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 98,
+  "category": "joins",
+  "question": "Show customer names, order dates, and product names for all purchases.",
+  "expected_sql": "SELECT c.customer_name, o.order_date, p.product_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 99,
+  "category": "joins",
+  "question": "Show customer names, product names, and quantities for completed orders.",
+  "expected_sql": "SELECT c.customer_name, p.product_name, oi.quantity FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE o.status = 'completed';"
+},
+{
+  "id": 100,
+  "category": "joins",
+  "question": "Show each product name with its category name and every quantity ordered.",
+  "expected_sql": "SELECT p.product_name, c.category_name, oi.quantity FROM products AS p JOIN categories AS c ON p.category_id = c.category_id JOIN order_items AS oi ON p.product_id = oi.product_id;"
+},
+{
+  "id": 101,
+  "category": "joins",
+  "question": "Show order IDs, customer names, product names, and quantities.",
+  "expected_sql": "SELECT o.order_id, c.customer_name, p.product_name, oi.quantity FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 102,
+  "category": "joins",
+  "question": "Show customer names and category names of products they ordered.",
+  "expected_sql": "SELECT c.customer_name, cat.category_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id JOIN categories AS cat ON p.category_id = cat.category_id;"
+},
+{
+  "id": 103,
+  "category": "joins",
+  "question": "Show completed order IDs with product names and unit prices.",
+  "expected_sql": "SELECT o.order_id, p.product_name, oi.unit_price FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE o.status = 'completed';"
+},
+{
+  "id": 104,
+  "category": "joins",
+  "question": "Show products ordered by customers from Delhi.",
+  "expected_sql": "SELECT p.product_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE c.city = 'Delhi';"
+},
+{
+  "id": 105,
+  "category": "joins",
+  "question": "Show customer names and products from the Electronics category that they ordered.",
+  "expected_sql": "SELECT c.customer_name, p.product_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id JOIN categories AS cat ON p.category_id = cat.category_id WHERE cat.category_name = 'Electronics';"
+},
+{
+  "id": 106,
+  "category": "joins",
+  "question": "Show customer names, order dates, and quantities for cancelled orders.",
+  "expected_sql": "SELECT c.customer_name, o.order_date, oi.quantity FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'cancelled';"
+},
+{
+  "id": 107,
+  "category": "joins",
+  "question": "Show product names, category names, and order dates for ordered products.",
+  "expected_sql": "SELECT p.product_name, c.category_name, o.order_date FROM products AS p JOIN categories AS c ON p.category_id = c.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id;"
+},
+{
+  "id": 108,
+  "category": "joins",
+  "question": "Show customers who ordered products costing more than 10000.",
+  "expected_sql": "SELECT c.customer_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE p.price > 10000;"
+},
+{
+  "id": 109,
+  "category": "joins",
+  "question": "Show order IDs and category names for products included in each order.",
+  "expected_sql": "SELECT o.order_id, c.category_name FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id JOIN categories AS c ON p.category_id = c.category_id;"
+},
+{
+  "id": 110,
+  "category": "joins",
+  "question": "Show customer names, product names, and category names for completed orders.",
+  "expected_sql": "SELECT c.customer_name, p.product_name, cat.category_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id JOIN categories AS cat ON p.category_id = cat.category_id WHERE o.status = 'completed';"
+},
+{
+  "id": 111,
+  "category": "joins",
+  "question": "Show products purchased in orders placed after March 1, 2025.",
+  "expected_sql": "SELECT p.product_name FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE o.order_date > '2025-03-01';"
+},
+{
+  "id": 112,
+  "category": "joins",
+  "question": "Show customer names and unit prices of products in their orders.",
+  "expected_sql": "SELECT c.customer_name, oi.unit_price FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id;"
+},
+{
+  "id": 113,
+  "category": "joins",
+  "question": "Show order IDs, customer cities, and product names.",
+  "expected_sql": "SELECT o.order_id, c.city, p.product_name FROM orders AS o JOIN customers AS c ON o.customer_id = c.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id;"
+},
+{
+  "id": 114,
+  "category": "joins",
+  "question": "Show customer names and product prices for products in completed orders.",
+  "expected_sql": "SELECT c.customer_name, p.price FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id WHERE o.status = 'completed';"
+},
+{
+  "id": 115,
+  "category": "joins",
+  "question": "Show customer names, product names, category names, order dates, and quantities for every ordered item.",
+  "expected_sql": "SELECT c.customer_name, p.product_name, cat.category_name, o.order_date, oi.quantity FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id JOIN products AS p ON oi.product_id = p.product_id JOIN categories AS cat ON p.category_id = cat.category_id;"
+}
+,
+{
+  "id": 116,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer and the number of orders they placed.",
+  "expected_sql": "SELECT c.customer_name, COUNT(o.order_id) AS order_count FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 117,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer who placed at least one completed order and the number of completed orders they placed.",
+  "expected_sql": "SELECT c.customer_name, COUNT(o.order_id) AS completed_order_count FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 118,
+  "category": "multi_table_aggregation",
+  "question": "Show each product and the total quantity ordered for that product.",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity) AS total_quantity FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.product_name;"
+},
+{
+  "id": 119,
+  "category": "multi_table_aggregation",
+  "question": "Show each category and the number of products in that category.",
+  "expected_sql": "SELECT c.category_name, COUNT(p.product_id) AS product_count FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_id, c.category_name;"
+},
+{
+  "id": 120,
+  "category": "multi_table_aggregation",
+  "question": "Show each order and its total value calculated from quantity times unit price.",
+  "expected_sql": "SELECT o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id GROUP BY o.order_id;"
+},
+{
+  "id": 121,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer who has completed orders and their total spending on completed orders.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 122,
+  "category": "multi_table_aggregation",
+  "question": "Which customer spent the most money on completed orders?",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 1;"
+},
+{
+  "id": 123,
+  "category": "multi_table_aggregation",
+  "question": "Show the three customers with the highest spending on completed orders.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 3;"
+},
+{
+  "id": 124,
+  "category": "multi_table_aggregation",
+  "question": "Show each product and the revenue it generated from completed orders.",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity * oi.unit_price) AS product_revenue FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY p.product_id, p.product_name;"
+},
+{
+  "id": 125,
+  "category": "multi_table_aggregation",
+  "question": "Which product generated the highest revenue from completed orders?",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity * oi.unit_price) AS product_revenue FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY p.product_id, p.product_name ORDER BY product_revenue DESC LIMIT 1;"
+},
+{
+  "id": 126,
+  "category": "multi_table_aggregation",
+  "question": "Show each category and the revenue generated by products in that category from completed orders.",
+  "expected_sql": "SELECT c.category_name, SUM(oi.quantity * oi.unit_price) AS category_revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name;"
+},
+{
+  "id": 127,
+  "category": "multi_table_aggregation",
+  "question": "Which category generated the highest revenue from completed orders?",
+  "expected_sql": "SELECT c.category_name, SUM(oi.quantity * oi.unit_price) AS category_revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name ORDER BY category_revenue DESC LIMIT 1;"
+},
+{
+  "id": 128,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer with completed orders and the total quantity of products they purchased in those completed orders.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity) AS total_quantity FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 129,
+  "category": "multi_table_aggregation",
+  "question": "Show each completed order and the number of distinct products in that order.",
+  "expected_sql": "SELECT o.order_id, COUNT(DISTINCT oi.product_id) AS distinct_product_count FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY o.order_id;"
+},
+{
+  "id": 130,
+  "category": "multi_table_aggregation",
+  "question": "Show customers whose total spending on completed orders is greater than 10000.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name HAVING SUM(oi.quantity * oi.unit_price) > 10000;"
+}
+,
+{
+  "id": 131,
+  "category": "multi_table_aggregation",
+  "question": "Show every customer and the number of orders they placed, including customers with no orders.",
+  "expected_sql": "SELECT c.customer_name, COUNT(o.order_id) AS order_count FROM customers AS c LEFT JOIN orders AS o ON c.customer_id = o.customer_id GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 132,
+  "category": "multi_table_aggregation",
+  "question": "Show every category and the number of products in it, including categories with no products.",
+  "expected_sql": "SELECT c.category_name, COUNT(p.product_id) AS product_count FROM categories AS c LEFT JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_id, c.category_name;"
+},
+{
+  "id": 133,
+  "category": "multi_table_aggregation",
+  "question": "Show every customer and their total spending on completed orders, using zero for customers with no completed-order spending.",
+  "expected_sql": "SELECT c.customer_name, COALESCE(SUM(oi.quantity * oi.unit_price), 0) AS total_spent FROM customers AS c LEFT JOIN orders AS o ON c.customer_id = o.customer_id AND o.status = 'completed' LEFT JOIN order_items AS oi ON o.order_id = oi.order_id GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 134,
+  "category": "multi_table_aggregation",
+  "question": "Show every product and its total quantity sold in completed orders, using zero for products never sold in completed orders.",
+  "expected_sql": "SELECT p.product_name, COALESCE(SUM(CASE WHEN o.status = 'completed' THEN oi.quantity ELSE 0 END), 0) AS total_quantity FROM products AS p LEFT JOIN order_items AS oi ON p.product_id = oi.product_id LEFT JOIN orders AS o ON oi.order_id = o.order_id GROUP BY p.product_id, p.product_name;"
+},
+{
+  "id": 135,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer with completed orders and their average completed order value.",
+  "expected_sql": "SELECT customer_name, AVG(order_value) AS average_order_value FROM (SELECT c.customer_id, c.customer_name, o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name, o.order_id) AS customer_orders GROUP BY customer_id, customer_name;"
+},
+{
+  "id": 136,
+  "category": "multi_table_aggregation",
+  "question": "Show the average value of all completed orders.",
+  "expected_sql": "SELECT AVG(order_value) AS average_order_value FROM (SELECT o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY o.order_id) AS completed_order_values;"
+},
+{
+  "id": 137,
+  "category": "multi_table_aggregation",
+  "question": "Show each category and the total quantity of products ordered from that category.",
+  "expected_sql": "SELECT c.category_name, SUM(oi.quantity) AS total_quantity FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY c.category_id, c.category_name;"
+},
+{
+  "id": 138,
+  "category": "multi_table_aggregation",
+  "question": "Show the two products with the highest total quantity ordered.",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity) AS total_quantity FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.product_name ORDER BY total_quantity DESC LIMIT 2;"
+},
+{
+  "id": 139,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer with completed orders and the number of distinct products they purchased in completed orders.",
+  "expected_sql": "SELECT c.customer_name, COUNT(DISTINCT oi.product_id) AS distinct_product_count FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 140,
+  "category": "multi_table_aggregation",
+  "question": "Show categories whose products generated more than 10000 in revenue from completed orders.",
+  "expected_sql": "SELECT c.category_name, SUM(oi.quantity * oi.unit_price) AS category_revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name HAVING SUM(oi.quantity * oi.unit_price) > 10000;"
+},
+{
+  "id": 141,
+  "category": "multi_table_aggregation",
+  "question": "Show products whose total quantity ordered is greater than two.",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity) AS total_quantity FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.product_name HAVING SUM(oi.quantity) > 2;"
+},
+{
+  "id": 142,
+  "category": "multi_table_aggregation",
+  "question": "Show the completed order with the highest total value.",
+  "expected_sql": "SELECT o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY o.order_id ORDER BY order_value DESC LIMIT 1;"
+},
+{
+  "id": 143,
+  "category": "multi_table_aggregation",
+  "question": "Show the three completed orders with the lowest total values.",
+  "expected_sql": "SELECT o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY o.order_id ORDER BY order_value ASC LIMIT 3;"
+},
+{
+  "id": 144,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer with completed orders and the number of completed order items they purchased.",
+  "expected_sql": "SELECT c.customer_name, COUNT(oi.order_item_id) AS order_item_count FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name;"
+},
+{
+  "id": 145,
+  "category": "multi_table_aggregation",
+  "question": "Show each category and the average price of products in that category.",
+  "expected_sql": "SELECT c.category_name, AVG(p.price) AS average_price FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_id, c.category_name;"
+},
+{
+  "id": 146,
+  "category": "multi_table_aggregation",
+  "question": "Show the category containing the largest number of products.",
+  "expected_sql": "SELECT c.category_name, COUNT(p.product_id) AS product_count FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_id, c.category_name ORDER BY product_count DESC LIMIT 1;"
+},
+{
+  "id": 147,
+  "category": "multi_table_aggregation",
+  "question": "Show each customer with completed orders and their highest completed order value.",
+  "expected_sql": "SELECT customer_name, MAX(order_value) AS highest_order_value FROM (SELECT c.customer_id, c.customer_name, o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name, o.order_id) AS customer_orders GROUP BY customer_id, customer_name;"
+},
+{
+  "id": 148,
+  "category": "multi_table_aggregation",
+  "question": "Show the customer with the highest number of completed orders.",
+  "expected_sql": "SELECT c.customer_name, COUNT(o.order_id) AS completed_order_count FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY completed_order_count DESC LIMIT 1;"
+},
+{
+  "id": 149,
+  "category": "multi_table_aggregation",
+  "question": "Show each category and the number of distinct customers who ordered products from that category.",
+  "expected_sql": "SELECT cat.category_name, COUNT(DISTINCT o.customer_id) AS customer_count FROM categories AS cat JOIN products AS p ON cat.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id GROUP BY cat.category_id, cat.category_name;"
+},
+{
+  "id": 150,
+  "category": "multi_table_aggregation",
+  "question": "Show the category with the highest number of distinct customers who purchased its products in completed orders.",
+  "expected_sql": "SELECT cat.category_name, COUNT(DISTINCT o.customer_id) AS customer_count FROM categories AS cat JOIN products AS p ON cat.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY cat.category_id, cat.category_name ORDER BY customer_count DESC LIMIT 1;"
+}
+,
+{
+  "id": 151,
+  "category": "date_time",
+  "question": "Show all orders placed after March 1, 2025.",
+  "expected_sql": "SELECT * FROM orders WHERE order_date > '2025-03-01';"
+},
+{
+  "id": 152,
+  "category": "date_time",
+  "question": "Show all orders placed before April 1, 2025.",
+  "expected_sql": "SELECT * FROM orders WHERE order_date < '2025-04-01';"
+},
+{
+  "id": 153,
+  "category": "date_time",
+  "question": "Show all orders placed between February 1, 2025 and April 30, 2025, including both dates.",
+  "expected_sql": "SELECT * FROM orders WHERE order_date BETWEEN '2025-02-01' AND '2025-04-30';"
+},
+{
+  "id": 154,
+  "category": "date_time",
+  "question": "Show customers who signed up during March 2024.",
+  "expected_sql": "SELECT * FROM customers WHERE STRFTIME('%Y-%m', signup_date) = '2024-03';"
+},
+{
+  "id": 155,
+  "category": "date_time",
+  "question": "Show orders placed during the year 2025.",
+  "expected_sql": "SELECT * FROM orders WHERE STRFTIME('%Y', order_date) = '2025';"
+},
+{
+  "id": 156,
+  "category": "date_time",
+  "question": "Show each order ID and the month number in which the order was placed.",
+  "expected_sql": "SELECT order_id, STRFTIME('%m', order_date) AS order_month FROM orders;"
+},
+{
+  "id": 157,
+  "category": "date_time",
+  "question": "Show each order ID and the year in which the order was placed.",
+  "expected_sql": "SELECT order_id, STRFTIME('%Y', order_date) AS order_year FROM orders;"
+},
+{
+  "id": 158,
+  "category": "date_time",
+  "question": "Show the number of orders placed in each month, grouping months separately by year.",
+  "expected_sql": "SELECT STRFTIME('%Y-%m', order_date) AS order_month, COUNT(*) AS order_count FROM orders GROUP BY order_month ORDER BY order_month;"
+},
+{
+  "id": 159,
+  "category": "date_time",
+  "question": "Show the total revenue from completed orders in each month, grouping months separately by year.",
+  "expected_sql": "SELECT STRFTIME('%Y-%m', o.order_date) AS sales_month, SUM(oi.quantity * oi.unit_price) AS total_revenue FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY sales_month ORDER BY sales_month;"
+},
+{
+  "id": 160,
+  "category": "date_time",
+  "question": "Show the month with the highest revenue from completed orders.",
+  "expected_sql": "SELECT STRFTIME('%Y-%m', o.order_date) AS sales_month, SUM(oi.quantity * oi.unit_price) AS total_revenue FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY sales_month ORDER BY total_revenue DESC LIMIT 1;"
+},
+{
+  "id": 161,
+  "category": "date_time",
+  "question": "Show customers who signed up after March 1, 2024.",
+  "expected_sql": "SELECT * FROM customers WHERE signup_date > '2024-03-01';"
+},
+{
+  "id": 162,
+  "category": "date_time",
+  "question": "Show customers ordered from earliest signup date to latest signup date.",
+  "expected_sql": "SELECT * FROM customers ORDER BY signup_date ASC;"
+},
+{
+  "id": 163,
+  "category": "date_time",
+  "question": "Show the earliest customer signup date.",
+  "expected_sql": "SELECT MIN(signup_date) AS earliest_signup_date FROM customers;"
+},
+{
+  "id": 164,
+  "category": "date_time",
+  "question": "Show the latest order date.",
+  "expected_sql": "SELECT MAX(order_date) AS latest_order_date FROM orders;"
+},
+{
+  "id": 165,
+  "category": "date_time",
+  "question": "Show the number of days between each order date and January 1, 2025.",
+  "expected_sql": "SELECT order_id, JULIANDAY(order_date) - JULIANDAY('2025-01-01') AS days_since_start FROM orders;"
+},
+{
+  "id": 166,
+  "category": "date_time",
+  "question": "Show each customer and the number of days between their signup date and January 1, 2025.",
+  "expected_sql": "SELECT customer_name, JULIANDAY('2025-01-01') - JULIANDAY(signup_date) AS days_since_signup FROM customers;"
+},
+{
+  "id": 167,
+  "category": "date_time",
+  "question": "Show the number of orders placed on each calendar date.",
+  "expected_sql": "SELECT DATE(order_date) AS order_day, COUNT(*) AS order_count FROM orders GROUP BY order_day ORDER BY order_day;"
+},
+{
+  "id": 168,
+  "category": "date_time",
+  "question": "Show completed orders placed in March 2025.",
+  "expected_sql": "SELECT * FROM orders WHERE status = 'completed' AND STRFTIME('%Y-%m', order_date) = '2025-03';"
+},
+{
+  "id": 169,
+  "category": "date_time",
+  "question": "Show the average completed order value for each month, grouping months separately by year.",
+  "expected_sql": "SELECT sales_month, AVG(order_value) AS average_order_value FROM (SELECT STRFTIME('%Y-%m', o.order_date) AS sales_month, o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY sales_month, o.order_id) AS monthly_orders GROUP BY sales_month ORDER BY sales_month;"
+},
+{
+  "id": 170,
+  "category": "date_time",
+  "question": "Show the customer who signed up earliest.",
+  "expected_sql": "SELECT customer_name, signup_date FROM customers ORDER BY signup_date ASC LIMIT 1;"
+}
+,
+{
+  "id": 171,
+  "category": "subquery_cte",
+  "question": "Show products priced above the average product price.",
+  "expected_sql": "SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products);"
+},
+{
+  "id": 172,
+  "category": "subquery_cte",
+  "question": "Show customers who have placed at least one order.",
+  "expected_sql": "SELECT * FROM customers WHERE customer_id IN (SELECT customer_id FROM orders);"
+},
+{
+  "id": 173,
+  "category": "subquery_cte",
+  "question": "Show customers who have never placed an order.",
+  "expected_sql": "SELECT * FROM customers WHERE customer_id NOT IN (SELECT customer_id FROM orders);"
+},
+{
+  "id": 174,
+  "category": "subquery_cte",
+  "question": "Show products that have been included in at least one order.",
+  "expected_sql": "SELECT * FROM products WHERE product_id IN (SELECT product_id FROM order_items);"
+},
+{
+  "id": 175,
+  "category": "subquery_cte",
+  "question": "Show products that have never been included in an order.",
+  "expected_sql": "SELECT * FROM products WHERE product_id NOT IN (SELECT product_id FROM order_items);"
+},
+{
+  "id": 176,
+  "category": "subquery_cte",
+  "question": "Show orders whose total value is greater than the average order value across all orders.",
+  "expected_sql": "WITH order_values AS (SELECT order_id, SUM(quantity * unit_price) AS order_value FROM order_items GROUP BY order_id) SELECT order_id, order_value FROM order_values WHERE order_value > (SELECT AVG(order_value) FROM order_values);"
+},
+{
+  "id": 177,
+  "category": "subquery_cte",
+  "question": "Show the customer or customers whose total spending on completed orders equals the highest completed-order spending among all customers.",
+  "expected_sql": "WITH customer_spending AS (SELECT c.customer_id, c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name) SELECT customer_name, total_spent FROM customer_spending WHERE total_spent = (SELECT MAX(total_spent) FROM customer_spending);"
+},
+{
+  "id": 178,
+  "category": "subquery_cte",
+  "question": "Show categories whose average product price is greater than the average price of all products.",
+  "expected_sql": "SELECT c.category_name, AVG(p.price) AS category_average_price FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_id, c.category_name HAVING AVG(p.price) > (SELECT AVG(price) FROM products);"
+},
+{
+  "id": 179,
+  "category": "subquery_cte",
+  "question": "Show customers who placed more orders than the average number of orders per customer among customers who placed at least one order.",
+  "expected_sql": "WITH customer_order_counts AS (SELECT customer_id, COUNT(*) AS order_count FROM orders GROUP BY customer_id) SELECT c.customer_name, coc.order_count FROM customer_order_counts AS coc JOIN customers AS c ON coc.customer_id = c.customer_id WHERE coc.order_count > (SELECT AVG(order_count) FROM customer_order_counts);"
+},
+{
+  "id": 180,
+  "category": "subquery_cte",
+  "question": "Show the product or products with the highest price.",
+  "expected_sql": "SELECT * FROM products WHERE price = (SELECT MAX(price) FROM products);"
+},
+{
+  "id": 181,
+  "category": "subquery_cte",
+  "question": "Using a CTE, show completed orders and their total values.",
+  "expected_sql": "WITH completed_order_values AS (SELECT o.order_id, SUM(oi.quantity * oi.unit_price) AS order_value FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY o.order_id) SELECT order_id, order_value FROM completed_order_values;"
+},
+{
+  "id": 182,
+  "category": "subquery_cte",
+  "question": "Using a CTE, show each product and its total quantity ordered.",
+  "expected_sql": "WITH product_quantities AS (SELECT product_id, SUM(quantity) AS total_quantity FROM order_items GROUP BY product_id) SELECT p.product_name, pq.total_quantity FROM product_quantities AS pq JOIN products AS p ON pq.product_id = p.product_id;"
+},
+{
+  "id": 183,
+  "category": "subquery_cte",
+  "question": "Show customers whose completed-order spending is above the average completed-order spending among customers with at least one completed order.",
+  "expected_sql": "WITH customer_spending AS (SELECT c.customer_id, c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name) SELECT customer_name, total_spent FROM customer_spending WHERE total_spent > (SELECT AVG(total_spent) FROM customer_spending);"
+},
+{
+  "id": 184,
+  "category": "subquery_cte",
+  "question": "Show products whose total quantity ordered is greater than the average total quantity ordered per ordered product.",
+  "expected_sql": "WITH product_quantities AS (SELECT product_id, SUM(quantity) AS total_quantity FROM order_items GROUP BY product_id) SELECT p.product_name, pq.total_quantity FROM product_quantities AS pq JOIN products AS p ON pq.product_id = p.product_id WHERE pq.total_quantity > (SELECT AVG(total_quantity) FROM product_quantities);"
+},
+{
+  "id": 185,
+  "category": "subquery_cte",
+  "question": "Using CTEs, show the category or categories with the highest revenue from completed orders.",
+  "expected_sql": "WITH category_revenue AS (SELECT c.category_id, c.category_name, SUM(oi.quantity * oi.unit_price) AS revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name) SELECT category_name, revenue FROM category_revenue WHERE revenue = (SELECT MAX(revenue) FROM category_revenue);"
+}
+,
+{
+  "id": 186,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Which customer spent the most money on completed orders?",
+      "sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 1;"
+    }
+  ],
+  "question": "Show me the top 3 instead.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 3;"
+},
+{
+  "id": 187,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show me the top 3 customers by spending on completed orders.",
+      "sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 3;"
+    }
+  ],
+  "question": "Only show their names.",
+  "expected_sql": "SELECT c.customer_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY SUM(oi.quantity * oi.unit_price) DESC LIMIT 3;"
+},
+{
+  "id": 188,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show all customers from Delhi.",
+      "sql": "SELECT * FROM customers WHERE city = 'Delhi';"
+    }
+  ],
+  "question": "Only show their names.",
+  "expected_sql": "SELECT customer_name FROM customers WHERE city = 'Delhi';"
+},
+{
+  "id": 189,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show all customers from Delhi.",
+      "sql": "SELECT * FROM customers WHERE city = 'Delhi';"
+    }
+  ],
+  "question": "Sort them alphabetically by name.",
+  "expected_sql": "SELECT * FROM customers WHERE city = 'Delhi' ORDER BY customer_name ASC;"
+},
+{
+  "id": 190,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show completed orders.",
+      "sql": "SELECT * FROM orders WHERE status = 'completed';"
+    }
+  ],
+  "question": "Show only the latest 3.",
+  "expected_sql": "SELECT * FROM orders WHERE status = 'completed' ORDER BY order_date DESC LIMIT 3;"
+},
+{
+  "id": 191,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show products costing more than 5000.",
+      "sql": "SELECT * FROM products WHERE price > 5000;"
+    }
+  ],
+  "question": "Now sort them from cheapest to most expensive.",
+  "expected_sql": "SELECT * FROM products WHERE price > 5000 ORDER BY price ASC;"
+},
+{
+  "id": 192,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show each category and its revenue from completed orders.",
+      "sql": "SELECT c.category_name, SUM(oi.quantity * oi.unit_price) AS category_revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name;"
+    }
+  ],
+  "question": "Show only the highest one.",
+  "expected_sql": "SELECT c.category_name, SUM(oi.quantity * oi.unit_price) AS category_revenue FROM categories AS c JOIN products AS p ON c.category_id = p.category_id JOIN order_items AS oi ON p.product_id = oi.product_id JOIN orders AS o ON oi.order_id = o.order_id WHERE o.status = 'completed' GROUP BY c.category_id, c.category_name ORDER BY category_revenue DESC LIMIT 1;"
+},
+{
+  "id": 193,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show the number of customers in each city.",
+      "sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city;"
+    }
+  ],
+  "question": "Sort them from highest count to lowest.",
+  "expected_sql": "SELECT city, COUNT(*) AS customer_count FROM customers GROUP BY city ORDER BY customer_count DESC;"
+},
+{
+  "id": 194,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show each product and its total quantity ordered.",
+      "sql": "SELECT p.product_name, SUM(oi.quantity) AS total_quantity FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.product_name;"
+    }
+  ],
+  "question": "Only show products with total quantity greater than 2.",
+  "expected_sql": "SELECT p.product_name, SUM(oi.quantity) AS total_quantity FROM products AS p JOIN order_items AS oi ON p.product_id = oi.product_id GROUP BY p.product_id, p.product_name HAVING SUM(oi.quantity) > 2;"
+},
+{
+  "id": 195,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show monthly revenue from completed orders.",
+      "sql": "SELECT STRFTIME('%Y-%m', o.order_date) AS sales_month, SUM(oi.quantity * oi.unit_price) AS total_revenue FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY sales_month ORDER BY sales_month;"
+    }
+  ],
+  "question": "Which month had the highest revenue?",
+  "expected_sql": "SELECT STRFTIME('%Y-%m', o.order_date) AS sales_month, SUM(oi.quantity * oi.unit_price) AS total_revenue FROM orders AS o JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY sales_month ORDER BY total_revenue DESC LIMIT 1;"
+},
+{
+  "id": 196,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show products from the Electronics category.",
+      "sql": "SELECT p.* FROM products AS p JOIN categories AS c ON p.category_id = c.category_id WHERE c.category_name = 'Electronics';"
+    }
+  ],
+  "question": "Only show products cheaper than 50000.",
+  "expected_sql": "SELECT p.* FROM products AS p JOIN categories AS c ON p.category_id = c.category_id WHERE c.category_name = 'Electronics' AND p.price < 50000;"
+},
+{
+  "id": 197,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show customers whose spending on completed orders is greater than 10000.",
+      "sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name HAVING SUM(oi.quantity * oi.unit_price) > 10000;"
+    }
+  ],
+  "question": "Sort them by spending from highest to lowest.",
+  "expected_sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name HAVING SUM(oi.quantity * oi.unit_price) > 10000 ORDER BY total_spent DESC;"
+},
+{
+  "id": 198,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show the three cheapest products.",
+      "sql": "SELECT * FROM products ORDER BY price ASC LIMIT 3;"
+    }
+  ],
+  "question": "Only show their names and prices.",
+  "expected_sql": "SELECT product_name, price FROM products ORDER BY price ASC LIMIT 3;"
+},
+{
+  "id": 199,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Show customers who signed up during March 2024.",
+      "sql": "SELECT * FROM customers WHERE STRFTIME('%Y-%m', signup_date) = '2024-03';"
+    }
+  ],
+  "question": "How many are there?",
+  "expected_sql": "SELECT COUNT(*) AS customer_count FROM customers WHERE STRFTIME('%Y-%m', signup_date) = '2024-03';"
+},
+{
+  "id": 200,
+  "category": "conversation",
+  "history": [
+    {
+      "question": "Which customer spent the most money on completed orders?",
+      "sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 1;"
+    },
+    {
+      "question": "Show me the top 3 instead.",
+      "sql": "SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 3;"
+    },
+    {
+      "question": "Only show their names.",
+      "sql": "SELECT c.customer_name FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY SUM(oi.quantity * oi.unit_price) DESC LIMIT 3;"
+    }
+  ],
+  "question": "Now sort those three names alphabetically.",
+  "expected_sql": "WITH top_customers AS (SELECT c.customer_name, SUM(oi.quantity * oi.unit_price) AS total_spent FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id JOIN order_items AS oi ON o.order_id = oi.order_id WHERE o.status = 'completed' GROUP BY c.customer_id, c.customer_name ORDER BY total_spent DESC LIMIT 3) SELECT customer_name FROM top_customers ORDER BY customer_name ASC;"
+}
+]
+
