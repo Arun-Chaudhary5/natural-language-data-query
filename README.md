@@ -26,7 +26,7 @@ Built with **Python, FastAPI, and LangChain**, it features a highly robust evalu
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/natural-language-data-query-system.git
+    git clone https://github.com/Arun-Chaudhary5/natural-language-data-query-system.git
     cd natural-language-data-query-system
     ```
 
